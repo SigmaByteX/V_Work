@@ -30,7 +30,7 @@ const GigCard = () => {
                 </div>
             </div>
         </Link>
-    );
+    )
 }
 
 export default GigCard;
