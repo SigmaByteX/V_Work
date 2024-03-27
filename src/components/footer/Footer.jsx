@@ -54,7 +54,7 @@ const Footer = () => {
                         <span>Community Standards</span>
                     </div>
                     <div className="item">
-                        <h2>More From Fiverr</h2>
+                        <h2>More From V-Work</h2>
                         <span>V-Work Business</span>
                         <span>V-Work Pro</span>
                         <span>V-Work Logo Maker</span>
