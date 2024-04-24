@@ -52,7 +52,9 @@ const Add = () => {
 
   const mutation = useMutation({
     mutationFn: (gig) => {
+      console.log("3");
       return newRequest.post("/gigs", gig);
+      
     },
     onSuccess: () => {
       queryClient.invalidateQueries(["myGigs"]);
@@ -62,7 +64,7 @@ const Add = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     mutation.mutate(state);
-    navigate("/mygigs")
+    navigate("/mygigs");
   };
 
   return (
@@ -108,7 +110,7 @@ const Add = () => {
               name="desc"
               id=""
               placeholder="Brief descriptions to introduce your service to customers"
-              cols="0"
+              
               rows="16"
               onChange={handleChange}
             ></textarea>
