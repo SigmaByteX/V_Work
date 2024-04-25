@@ -1,8 +1,8 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Messages.scss";
 import newRequest from "../../utils/newRequest";
+import "./Messages.scss";
 import moment from "moment";
 
 const Messages = () => {
@@ -68,10 +68,10 @@ const Messages = () => {
                 <td>
                   {((currentUser.isSeller && !c.readBySeller) ||
                     (!currentUser.isSeller && !c.readByBuyer)) && (
-                    <button onClick={() => handleRead(c.id)}>
-                      Mark as Read
-                    </button>
-                  )}
+                      <button onClick={() => handleRead(c.id)}>
+                        Mark as Read
+                      </button>
+                    )}
                 </td>
               </tr>
             ))}
